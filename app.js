@@ -1,5 +1,6 @@
 const prompt = require("prompt-sync")()
 let score = 0;
+const questions = 3;
 
 console.log("Welcome to the Computer Hardware Quiz")
 
@@ -19,10 +20,12 @@ if (quest2.toLowerCase() === correct2) {
 
 const quest3 = prompt("What is reccomended RAM in 2024? ")
 const correct3 = "16gb"
-const correct3rd = "16"
 
-if (quest3.toLowerCase() === correct3 || correct3rd) {
+if (quest3.toUpperCase() === correct3) {
     score++
 }
 
+const percent = Math.round((score / questions) * 100)
+
 console.log("You got", score, "score! ")
+console.log(percent.toString() + "%")
