@@ -3,7 +3,7 @@ let score = 0;
 
 console.log("Welcome to the Computer Hardware Quiz")
 
-const quest1 = prompt("What is the brain of the computer: ")
+const quest1 = prompt("Brain of the computer: ")
 const correct1 = "CPU"
 
 if (quest1.toUpperCase() === correct1) {
@@ -23,10 +23,10 @@ if (quest2.toLowerCase() === correct2) {
     console.log("Sorry. Wrong answer")
 }
 
-const quest3 = prompt("What is the brain of the computer: ")
-const correct3 = "CPU"
+const quest3 = prompt("What is reccomended RAM in 2024? ")
+const correct3 = "16gb"
 
-if (quest1.toUpperCase() === correct1) {
+if (quest3.toLowerCase() === correct3) {
     console.log("You got it correct!")
     score++
 } else {
