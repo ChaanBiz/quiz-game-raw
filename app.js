@@ -7,29 +7,22 @@ const quest1 = prompt("Brain of the computer: ")
 const correct1 = "CPU"
 
 if (quest1.toUpperCase() === correct1) {
-    console.log("You got it correct!")
     score++
-} else {
-    console.log("Sorry. Wrong answer")
 }
 
 const quest2 = prompt("Would you rather 3090ti or 4060? ")
 const correct2 = "3090ti"
 
 if (quest2.toLowerCase() === correct2) {
-    console.log("You got it correct!")
     score++
-} else {
-    console.log("Sorry. Wrong answer")
 }
 
 const quest3 = prompt("What is reccomended RAM in 2024? ")
 const correct3 = "16gb"
+const correct3rd = "16"
 
-if (quest3.toLowerCase() === correct3) {
-    console.log("You got it correct!")
+if (quest3.toLowerCase() === correct3 || correct3rd) {
     score++
-} else {
-    console.log("Sorry. Wrong answer")
 }
 
+console.log("You got", score, "score! ")
